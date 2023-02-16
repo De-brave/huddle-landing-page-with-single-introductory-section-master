@@ -1,0 +1,160 @@
+/* Set margin, padding, height, display, and background for the body */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(257, 40%, 49%);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding: 0.5rem 2rem;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+}
+
+/* Set width and margin-bottom for the logo */
+.logo {
+    width: 10rem;
+    margin-bottom: 3rem;
+    display: block;
+    
+}
+
+/* Set display, margin, width, and margin-bottom for the illustration mockups */
+.illustration-mockups {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 19rem;
+    margin-bottom: 2rem;
+}
+
+/* Set font-size, and font-family for the h1 heading */
+h1 { 
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Set font-size, and line-height for the p paragraph */
+p {
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+}
+
+/* Set display, margin-left, margin-right, width, height, border-radius, border, box-shadow, margin-top, font-size, margin-bottom, color, and cursor for the button */
+button {
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
+    width: 230px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 1px 2px 4px rgba(19, 18, 18, 0.473);
+    margin-top: 3rem;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    color: hsl(257, 40%, 49%);
+    cursor: pointer;
+}
+
+/* Set background, color, and transition for the button when hovered */
+button:hover {
+    background: hsl(300, 69%, 71%);
+    color: hsl(0, 0%, 100%);
+    transition: 0.3s ease;
+}
+
+/* Set color, padding, font-size, border, border-radius, width, text-align, margin-left, cursor, and margin-bottom for the i element */
+i {
+    color: hsl(0, 0%, 100%);
+    padding: 8px;
+    font-size: 1.2em;
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 1em;
+    text-align: center;
+    margin-left: 0.7rem;
+    cursor: pointer;
+    margin-bottom: 2em;
+}
+
+/* Set color, border, and transition for the i element when hovered */
+i:hover {
+    color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+    transition: 0.4s ease;
+}
+
+/* Set font-size and text-align for the attribution class*/
+.attribution { font-size: 15px; text-align: center; }
+.attribution a { color: hsl(300, 69%, 71%); }
+
+@media screen and (min-width: 1090px) {
+    body {
+        height: fit-content;
+        background-image: url(images/bg-desktop.svg);
+        background-size: contain;
+        background-position: 0px 0px;
+        background-color: hsl(257, 40%, 49%);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        padding: 1em 0em;
+        
+    }
+
+    .logo {
+        margin-left: 30px;
+    }
+
+    .flex-container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .illustration-mockups {
+        width: 42em;
+        margin-left: 30px;
+    }
+
+    .typo {
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+
+    h1 {
+        text-align: left;
+        font-size: 2.9em;
+    }
+
+    p {
+        text-align: left;
+        font-size: 1.3em;
+    }
+
+    button {
+        float: left;
+        margin-top: 10px;   
+    }
+
+    i {
+        margin: 0px 6px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: flex-start;
+        
+        flex-direction: row-reverse;
+    }
+
+    footer div {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+}
